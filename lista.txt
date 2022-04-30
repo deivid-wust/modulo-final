@@ -1,0 +1,5 @@
+aplicar edicao pelo botao
+
+apicar o botao de deletar testo
+
+Criar botao de implementar nota
