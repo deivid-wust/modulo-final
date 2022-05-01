@@ -24,18 +24,18 @@ function deletarNota(posicao) {
 }
 
 function recarregarLista() {
-  inicio.innerHTML = "";
+  lista.innerHTML = "";
 
   for (let indice = 0; indice < notas.length; indice++) {
     let nota = notas[indice];
     let modelo = `
     <div>
       <i>ID: ${indice}</i>
-        <p id="titulo:${indice}"> Titulo: ${nota.titulo} </p>
-        <p id="descricao:${indice}"> Descricão: ${nota.descricao} </p>
+        <p id="titulo:${indice}"> <h3>Titulo:</h3> ${nota.titulo} </p>
+        <p id="descricao:${indice}"> <h3>Descrição:</h3> ${nota.descricao} </p>
       <button id="deletarNota" onclick="deletarNota(${indice})">Deletar Nota</button>
     </div>
     `;
-    inicio.innerHTML += modelo;
+    lista.innerHTML += modelo;
   }
 }

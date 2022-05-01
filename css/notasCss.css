@@ -10,15 +10,17 @@ body {
 }
 
 #inicio {
+  top: 50px;
+  left: 35%;
+  position: relative;
   background-color: #6a5acd;
-  height: 55vh;
+  height: 90vh;
   width: 30vw;
   border-radius: 50px;
   box-shadow: 0, 0, 0, 0.5;
   box-shadow: blueviolet;
-  align-items: center;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 25px;
 }
 
 #inicio > p {
@@ -37,4 +39,58 @@ body {
 #inicio > button:hover {
   height: 6vh;
   width: 16vh;
+}
+
+#criarNota {
+  font-family: "Franklin Gothic Medium";
+  height: 35px;
+  width: 125px;
+  background-color: #6a5acd;
+  border: 0;
+  border-radius: 5px;
+  position: relative;
+  top: 80px;
+  left: 32%;
+}
+
+button {
+  font-family: "Franklin Gothic Medium";
+  height: 30px;
+  width: 100px;
+  background-color: red;
+  border: 0;
+  border-radius: 5px;
+}
+
+h2 {
+  color: black;
+  top: 50px;
+  left: 35%;
+  position: relative;
+  top: 50px;
+  left: 35%;
+}
+
+input {
+  background-color: #ada1fc;
+  border: 0;
+  border-radius: 2px;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  left: 44%;
+  height: 25px;
+  padding: 5px;
+}
+
+.alinhamento {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  left: 0.6vw;
+  padding: 5px;
+}
+
+i {
+  display: none;
 }
