@@ -38,22 +38,23 @@ button > a {
   list-style: none;
 }
 
-.div-login > input {
-  width: 400px;
-  border-radius: 15px;
+form > input {
+  width: 350px;
+  border-radius: 8px;
   text-align: center;
 }
 
-.div-login > a {
+form > a {
   color: white;
   text-decoration: none;
+  text-align: end;
 }
 
-.div-login {
-  text-align: center;
+form {
   padding-top: 20vh;
   display: block;
   position: absolute;
+  display: grid;
   top: 25px;
   right: 400px;
   color: rgb(255, 255, 255);
