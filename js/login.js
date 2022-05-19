@@ -29,11 +29,25 @@ function buscarUsuarios() {
 buscarUsuarios();
 
 function validarPessoa() {
+  var emailPessoa = document.getElementById("email").value;
+  var senhaPessoa = document.getElementById("password").value;
+
   for (let indice = 0; indice < usuarios.length; indice++) {
     let usuario = usuarios[indice];
 
-    if ((emailPessoa, senhaPessoa == usuarios)) {
+    if (
+      usuario.emailPessoa === emailPessoa &&
+      usuario.senhaPessoa === senhaPessoa
+    ) {
       return true;
-    } else false;
+    }
+  }
+}
+
+function fazerLogin() {
+  if (validarPessoa()) {
+    window.location.href = "notas.html";
+  } else {
+    alert("USUARIO OU SENHA INVALIDA");
   }
 }
