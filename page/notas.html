@@ -4,27 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/notasCss.css" />
-    <title>Notas</title>
+    <link rel="stylesheet" href="/css/notas2.css" />
+    <title>Cadastro de Notas</title>
   </head>
+
   <body>
-    <div>
-      <h2>Bem vindo ao Seu bloco de notas!</h2>
-    </div>
-    <div id="inicio"></div>
-    <div id="cricao">
-      <div class="alinhamento">
-        <h1><strong>Titulo da Nota</strong></h1>
-      </div>
-      <input type="text" id="titulo" maxlength="15" />
-      <div class="alinhamento">
-        <h1><strong>Descrição da Nota</strong></h1>
-      </div>
-      <input type="text" id="descricao" maxlength="35" />
-      <button id="criarNota" onclick="criarNota()">Adicionar Nota</button>
-    </div>
-    <main></main>
-    <script src="../js/script.js"></script>
-    <script src="/js/script.js"></script>
+    <h1>Notas</h1>
+
+    <form id="form-cadastro">
+      
+        <h3>Registrar Nota</h3>
+
+        <label for="titulo-nota">Título Nota</label>
+        <input type="text" name="titulo-nota" id="input-titulo" />
+
+        <label for="descricao-nota">Descrição do Nota</label>
+        <input type="text" name="descricao-nota" id="input-descricao" />
+
+        <input type="submit" value="Salvar" id="btn-salvar" onclick="adicionarNota()"/>
+     
+    </form>
+
+    <table id="tabela-registros">
+      <tr>
+        <th>Registro ID</th>
+        <th>Título</th>
+        <th>Descrição</th>
+        <th>Ações</th>
+      </tr>
+      </tr>
+    </table>
+    <script src="/js/index.js"></script>
   </body>
 </html>
