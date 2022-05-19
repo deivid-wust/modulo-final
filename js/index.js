@@ -19,6 +19,9 @@ function validarInput() {
   if (tituloNota == "" || descricaoNota == "") {
     alert("PREENCHA OS CAMPOS PARA ADICIONAR UMA NOTA / EDITAR UMA NOTA!");
     return false;
+  } else if (tituloNota == "edson" || descricaoNota == "edson") {
+    alert("EDSON é UMA PALAVRA PROIBIDA!");
+    return false;
   } else {
     return true;
   }
