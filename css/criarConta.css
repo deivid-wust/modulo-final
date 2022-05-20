@@ -1,7 +1,7 @@
 * {
   border: 0px;
   padding: 0px;
-  background-color: rgb(104, 5, 196);
+  background-color: rgb(49, 157, 203);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,7 +22,7 @@ form {
 }
 
 label {
-  background-color: rgb(104, 5, 196);
+  background-color: rgb(49, 157, 203);
   color: black;
   position: relative;
   top: 50%;
@@ -62,5 +62,5 @@ div a {
   height: 15;
   width: 50px;
   border-radius: 5px;
-  background-color: rgb(150, 55, 238);
+  background-color: rgb(49, 157, 203);
 }

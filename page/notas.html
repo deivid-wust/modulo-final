@@ -9,20 +9,21 @@
   </head>
 
   <body>
-    <h1>Notas</h1>
-
     <form id="form-cadastro">
-      
-        <h3>Registrar Nota</h3>
+      <h3>Registrar novas Notas</h3>
 
-        <label for="titulo-nota">Título Nota</label>
-        <input type="text" name="titulo-nota" id="input-titulo" />
+      <label for="titulo-nota">Título Nota</label>
+      <input type="text" name="titulo-nota" id="input-titulo" />
 
-        <label for="descricao-nota">Descrição do Nota</label>
-        <input type="text" name="descricao-nota" id="input-descricao" />
+      <label for="descricao-nota">Descrição do Nota</label>
+      <input type="text" name="descricao-nota" id="input-descricao" />
 
-        <input type="submit" value="Salvar" id="btn-salvar" onclick="adicionarNota()"/>
-     
+      <input
+        type="submit"
+        value="Salvar"
+        id="btn-salvar"
+        onclick="adicionarNota()"
+      />
     </form>
 
     <table id="tabela-registros">
@@ -31,7 +32,6 @@
         <th>Título</th>
         <th>Descrição</th>
         <th>Ações</th>
-      </tr>
       </tr>
     </table>
     <script src="/js/index.js"></script>

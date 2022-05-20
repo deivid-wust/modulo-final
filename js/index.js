@@ -17,7 +17,7 @@ function validarInput() {
   var descricaoNota = document.getElementById("input-descricao").value;
 
   if (tituloNota == "" || descricaoNota == "") {
-    alert("PREENCHA OS CAMPOS PARA ADICIONAR UMA NOTA / EDITAR UMA NOTA!");
+    alert("PREENCHA OS INPUTS PARA ADICIONAR UMA NOTA ou EDITAR UMA NOTA !");
     return false;
   } else if (tituloNota == "edson" || descricaoNota == "edson") {
     alert("EDSON é UMA PALAVRA PROIBIDA!");
